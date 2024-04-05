@@ -12,6 +12,7 @@ type Props = {
   type?: 'text' | 'number' | 'password' | 'email'
   validate?: (value: string) => boolean | string
   disabled?: boolean
+  className?: any
 }
 
 export const Input: React.FC<Props> = ({
@@ -23,6 +24,7 @@ export const Input: React.FC<Props> = ({
   type = 'text',
   validate,
   disabled,
+  className,
 }) => {
   return (
     <div className={classes.inputWrap}>
