@@ -82,8 +82,14 @@
   padding-top: 50px;
   flex-wrap: wrap;
   margin: calc(var(--base) * -0.5);
+  
 
   & > * {
     margin: calc(var(--base) / 2);
   }
+}
+.links li a {
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
 }
