@@ -24,11 +24,11 @@ export const RelatedProducts: React.FC<RelatedProductsProps> = props => {
       <Gutter>
       <h3 className={classes.title}>Related Products</h3>
         <div className={classes.grid}>
-          {docs?.map((doc, index) => {
+          {docs?.map((doc) => {
             if (typeof doc === 'string') return null
 
             return (
-              <Card relationTo={relationTo} doc={doc} showCategories />
+              <Card key={doc.id} relationTo={relationTo} doc={doc} showCategories />
             )
           })}
         </div>
