@@ -38,7 +38,7 @@ const FooterComponent = ({ footer } : { footer: Footer}) => {
           <div className={classes.wrap}>
             <Link href="/">
               <Image 
-                src="/mistertennis-logo-blanco.svg"
+                src="/logo-white.svg"
                 alt='Logo'
                 width={170}
                 height={50}

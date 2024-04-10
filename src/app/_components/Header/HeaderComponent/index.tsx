@@ -21,12 +21,12 @@ const HeaderComponent = ({ header }: { header: Header }) => {
         .join(' ')}>
         <Gutter className={classes.wrap}>
             <Link href="/">
-                <Image src="/mistertennis-logo-blanco.svg" alt="logo"
+                {/* <Image src="/mistertennis-logo-blanco.svg" alt="logo"
                 width={270}
-                height={50}/>
-                {/* <Image src="/logo-black.svg" alt="logo"
-                width={170}
                 height={50}/> */}
+                <Image src="/logo-black.svg" alt="logo"
+                width={170}
+                height={50}/>
             </Link>
             <HeaderNav header={header}/>
             {/* <MobileNav header={header}/> */}
